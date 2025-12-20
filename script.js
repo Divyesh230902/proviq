@@ -86,27 +86,29 @@ tabButtons.forEach(button => {
 // Contact form handling
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = {
-        fullName: document.getElementById('fullName').value,
-        workEmail: document.getElementById('workEmail').value,
-        company: document.getElementById('company').value,
-        primaryObjective: document.getElementById('primaryObjective').value,
-        message: document.getElementById('message').value
-    };
-    
-    // Here you would typically send the data to a server
-    console.log('Form submitted:', formData);
-    
-    // Show success message (you can replace this with actual form submission)
-    alert('Thank you for your submission! We will get back to you soon.');
-    
-    // Reset form
-    contactForm.reset();
-});
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = {
+            fullName: document.getElementById('fullName').value,
+            workEmail: document.getElementById('workEmail').value,
+            company: document.getElementById('company').value,
+            primaryObjective: document.getElementById('primaryObjective').value,
+            message: document.getElementById('message').value
+        };
+        
+        // Here you would typically send the data to a server
+        console.log('Form submitted:', formData);
+        
+        // Show success message (you can replace this with actual form submission)
+        alert('Thank you for your submission! We will get back to you soon.');
+        
+        // Reset form
+        contactForm.reset();
+    });
+}
 
 // Parallax effect for hero section
 window.addEventListener('scroll', () => {
@@ -161,3 +163,9 @@ staggerCards(solutionCards);
 const serviceItems = document.querySelectorAll('.service-item');
 staggerCards(serviceItems);
 
+// Apply stagger to impact and process cards
+const impactCards = document.querySelectorAll('.impact-card');
+staggerCards(impactCards);
+
+const processCards = document.querySelectorAll('.process-card');
+staggerCards(processCards);

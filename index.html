@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -112,11 +112,13 @@
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#solutions" class="nav-link">Solutions</a></li>
-                    <li><a href="#reinforcement-learning" class="nav-link">Reinforcement Learning</a></li>
-                    <li><a href="#computer-vision" class="nav-link">Computer Vision</a></li>
-                    <li><a href="#agentic-systems" class="nav-link">Agentic Systems</a></li>
+                    <li><a href="#impact" class="nav-link">Impact</a></li>
+                    <li><a href="#process" class="nav-link">Process</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
+                <div class="nav-actions">
+                    <a href="#contact" class="btn btn-primary btn-nav">Book a Call</a>
+                </div>
                 <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
@@ -130,19 +132,35 @@
     <section id="home" class="hero">
         <div class="hero-background"></div>
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="gradient-text">Enterprise AI Solutions</span>
-                    <br>That Scale with Intelligence
-                </h1>
-                <p class="hero-subtitle">
-                    Proviq empowers enterprises with adaptive AI technologies across Reinforcement Learning, 
-                    Computer Vision, and Agentic Systems. Transform your business with intelligent automation 
-                    that continuously learns and evolves.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-                    <a href="#solutions" class="btn btn-secondary">Explore Solutions</a>
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">Proviq Enterprise AI Studio</p>
+                    <h1 class="hero-title">
+                        Enterprise AI that learns in production
+                    </h1>
+                    <p class="hero-subtitle">
+                        Proviq builds reinforcement learning, computer vision, and agentic systems that improve with every decision.
+                        Launch measurable pilots in weeks, then scale safely with observability and guardrails.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Book a Strategy Call</a>
+                        <a href="#solutions" class="btn btn-secondary">Explore Solutions</a>
+                    </div>
+                    <div class="hero-proof">
+                        <span>OptRL</span>
+                        <span>Tusker AI</span>
+                        <span>AgentOps-ready</span>
+                    </div>
+                </div>
+                <div class="hero-panel" data-scroll>
+                    <div class="panel-badge">6-10 week pilot</div>
+                    <h3>Build your adaptive decision stack</h3>
+                    <ul class="panel-list">
+                        <li><span>01</span> Define outcomes, guardrails, and success metrics.</li>
+                        <li><span>02</span> Train, simulate, and validate with safe feedback loops.</li>
+                        <li><span>03</span> Deploy with continuous learning and live monitoring.</li>
+                    </ul>
+                    <a href="#process" class="panel-link">See the engagement model →</a>
                 </div>
             </div>
         </div>
@@ -151,13 +169,52 @@
         </div>
     </section>
 
+    <!-- Impact Section -->
+    <section id="impact" class="impact-section">
+        <div class="container">
+            <div class="section-header light">
+                <p class="section-eyebrow">Measured Impact</p>
+                <h2 class="section-title">Operational wins you can track</h2>
+                <p class="section-subtitle">
+                    We prioritize outcomes that translate into revenue lift, cost control, and reliable automation.
+                </p>
+            </div>
+            <div class="impact-grid">
+                <article class="impact-card" data-scroll>
+                    <h3>6-10 weeks</h3>
+                    <p>Pilot to production-grade demo</p>
+                </article>
+                <article class="impact-card" data-scroll>
+                    <h3>45+ monitors</h3>
+                    <p>AgentOps and MLOps observability</p>
+                </article>
+                <article class="impact-card" data-scroll>
+                    <h3>25x</h3>
+                    <p>Productivity gains in vision workflows</p>
+                </article>
+                <article class="impact-card" data-scroll>
+                    <h3>75%</h3>
+                    <p>Cost optimization opportunities</p>
+                </article>
+            </div>
+            <p class="impact-note">Indicative outcomes from pilots and scaled deployments.</p>
+            <div class="partner-strip" aria-label="Partner brands">
+                <span>OptRL</span>
+                <span>Tusker AI</span>
+                <span>Proviq Labs</span>
+                <span>AgentOps</span>
+            </div>
+        </div>
+    </section>
+
     <!-- Solutions Overview -->
     <section id="solutions" class="solutions-overview">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Our AI Solutions</h2>
+                <p class="section-eyebrow">Solutions</p>
+                <h2 class="section-title">Integrated AI divisions</h2>
                 <p class="section-subtitle">
-                    Three powerful divisions working together to deliver comprehensive enterprise AI capabilities
+                    Three focused teams working together to deliver comprehensive enterprise AI capabilities.
                 </p>
             </div>
             <div class="solutions-grid">
@@ -512,13 +569,47 @@
         </div>
     </section>
 
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">Engagement Model</p>
+                <h2 class="section-title">From strategy to production</h2>
+                <p class="section-subtitle">
+                    A three-phase delivery model that de-risks deployment and keeps outcomes measurable.
+                </p>
+            </div>
+            <div class="process-grid">
+                <article class="process-card" data-scroll>
+                    <span class="process-step">01</span>
+                    <h3>Diagnose</h3>
+                    <p>Align outcomes, audit data readiness, and define success metrics with stakeholders.</p>
+                </article>
+                <article class="process-card" data-scroll>
+                    <span class="process-step">02</span>
+                    <h3>Pilot</h3>
+                    <p>Ship a scoped, measurable pilot with simulation, testing, and guardrail design.</p>
+                </article>
+                <article class="process-card" data-scroll>
+                    <span class="process-step">03</span>
+                    <h3>Scale</h3>
+                    <p>Deploy with AgentOps observability, retraining loops, and continuous optimization.</p>
+                </article>
+            </div>
+            <div class="process-cta">
+                <p>Ready to map your adaptive AI roadmap?</p>
+                <a href="#contact" class="btn btn-primary">Talk to the team</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h2>Get In Touch</h2>
-                    <p>Share your business use case and we'll design an AI strategy that accelerates measurable results.</p>
+                    <h2>Let's build your AI roadmap</h2>
+                    <p>Share your business use case and we will design an AI strategy that delivers measurable results.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <strong>Email</strong>
@@ -526,8 +617,12 @@
                         </div>
                         <div class="contact-item">
                             <strong>Location</strong>
-                            <p>To be updated</p>
+                            <p>Remote-first, global delivery</p>
                         </div>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="#contactForm" class="btn btn-secondary">Schedule a Call</a>
+                        <span class="contact-note">Response within 2 business days.</span>
                     </div>
                 </div>
                 <form class="contact-form" id="contactForm" aria-label="Contact form">
@@ -603,4 +698,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

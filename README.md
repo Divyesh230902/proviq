@@ -135,7 +135,7 @@ All styles are in `styles.css`. Key customization points:
 - **HTML5**: Semantic markup
 - **CSS3**: Modern styling with CSS Grid, Flexbox, and custom properties
 - **JavaScript (Vanilla)**: No dependencies, pure JavaScript
-- **Google Fonts**: Inter font family
+- **Google Fonts**: IBM Plex Sans and Space Grotesk
 - **Docker**: Containerization for easy deployment
 - **Nginx**: High-performance web server
 
@@ -240,4 +240,3 @@ The Docker setup is production-ready and can be deployed to any container hostin
 ## License
 
 © 2025 Proviq. All rights reserved.
-
