@@ -1,6 +1,5 @@
 // Navigation scroll effect
 const navbar = document.querySelector('.navbar');
-let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
@@ -11,7 +10,6 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('scrolled');
     }
     
-    lastScroll = currentScroll;
 });
 
 // Mobile menu toggle
@@ -65,24 +63,6 @@ document.querySelectorAll('[data-scroll]').forEach(el => {
     observer.observe(el);
 });
 
-// Tab functionality for Computer Vision use cases
-const tabButtons = document.querySelectorAll('.tab-button');
-const tabContents = document.querySelectorAll('.tab-content');
-
-tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const targetTab = button.getAttribute('data-tab');
-        
-        // Remove active class from all buttons and contents
-        tabButtons.forEach(btn => btn.classList.remove('active'));
-        tabContents.forEach(content => content.classList.remove('active'));
-        
-        // Add active class to clicked button and corresponding content
-        button.classList.add('active');
-        document.getElementById(targetTab).classList.add('active');
-    });
-});
-
 // Contact form handling
 const contactForm = document.getElementById('contactForm');
 
@@ -94,7 +74,7 @@ if (contactForm) {
         const formData = {
             fullName: document.getElementById('fullName').value,
             workEmail: document.getElementById('workEmail').value,
-            company: document.getElementById('company').value,
+            companyName: document.getElementById('companyName').value,
             primaryObjective: document.getElementById('primaryObjective').value,
             message: document.getElementById('message').value
         };
@@ -159,9 +139,6 @@ const staggerCards = (cards) => {
 const solutionCards = document.querySelectorAll('.solution-card');
 staggerCards(solutionCards);
 
-// Apply stagger to impact and process cards
-const impactCards = document.querySelectorAll('.impact-card');
-staggerCards(impactCards);
-
-const processCards = document.querySelectorAll('.process-card');
-staggerCards(processCards);
+// Apply stagger to service cards
+const serviceCards = document.querySelectorAll('.service-card');
+staggerCards(serviceCards);

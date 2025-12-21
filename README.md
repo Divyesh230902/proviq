@@ -1,10 +1,10 @@
-# Proviq - Enterprise AI Solutions
+# Proviq | OptRL & TuskerAI
 
-A modern, responsive website for Proviq showcasing its two product companies: OptRL and TuskerAI.
+A modern, responsive website for Proviq highlighting OptRL and TuskerAI alongside services and impact.
 
 ## Overview
 
-Proviq is an enterprise AI solutions company with three specialized divisions:
+Proviq showcases two AI platforms and a focused services offering:
 
 1. **OptRL** - Reinforcement learning decision intelligence platform
 2. **TuskerAI** - No-code computer vision platform for operations
@@ -14,7 +14,7 @@ Proviq is an enterprise AI solutions company with three specialized divisions:
 - **Modern Design**: Clean, professional UI with gradient accents and smooth animations
 - **Fully Responsive**: Works seamlessly on desktop, tablet, and mobile devices
 - **Smooth Scrolling**: Enhanced navigation with smooth scroll behavior
-- **Interactive Elements**: Scroll-triggered animations, tabbed content, and interactive forms
+- **Interactive Elements**: Scroll-triggered animations and interactive forms
 - **Performance Optimized**: Lightweight and fast-loading
 
 ## File Structure
