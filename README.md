@@ -1,6 +1,6 @@
-# Proviq | OptRL & TuskerAI
+# Proviq — Pro • Vision • IQ
 
-A modern, responsive website for Proviq highlighting OptRL and TuskerAI alongside services and impact.
+A modern, responsive website for Proviq highlighting OptRL, TuskerAI, services, and impact.
 
 ## Overview
 
@@ -119,6 +119,7 @@ All styles are in `styles.css`. Key customization points:
 ### Content
 
 - **Hero Section**: Update the main headline and description in the hero section
+- **Impact Section**: Adjust the "What We Do", "How We Deliver", and "Why Proviq" copy
 - **Company Sections**: Modify content in each company section (OptRL, TuskerAI)
 - **Services**: Update service descriptions in the respective sections
 
