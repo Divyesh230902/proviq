@@ -1,14 +1,13 @@
 # Proviq - Enterprise AI Solutions
 
-A modern, responsive website for Proviq showcasing three powerful AI divisions: Reinforcement Learning, Computer Vision, and Agentic Systems.
+A modern, responsive website for Proviq showcasing its two product companies: OptRL and TuskerAI.
 
 ## Overview
 
 Proviq is an enterprise AI solutions company with three specialized divisions:
 
-1. **Reinforcement Learning** - Adaptive, goal-driven machine learning systems
-2. **Computer Vision** - No-code AI computer vision platform for image and video analytics
-3. **Agentic Systems** - Intelligent autonomous agents with built-in guardrails
+1. **OptRL** - Reinforcement learning decision intelligence platform
+2. **TuskerAI** - No-code computer vision platform for operations
 
 ## Features
 
@@ -120,7 +119,7 @@ All styles are in `styles.css`. Key customization points:
 ### Content
 
 - **Hero Section**: Update the main headline and description in the hero section
-- **Division Sections**: Modify content in each division section (Reinforcement Learning, Computer Vision, Agentic Systems)
+- **Company Sections**: Modify content in each company section (OptRL, TuskerAI)
 - **Services**: Update service descriptions in the respective sections
 
 ## Browser Support

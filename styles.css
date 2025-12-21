@@ -660,10 +660,6 @@ section {
     background: var(--bg-primary);
 }
 
-.as-section {
-    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-}
-
 .division-header {
     text-align: center;
     margin-bottom: 4rem;
@@ -749,58 +745,6 @@ section {
 .feature-card p {
     color: var(--text-secondary);
     font-size: 0.95rem;
-}
-
-/* Services Section */
-.services-section {
-    margin-bottom: 4rem;
-}
-
-.services-title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: var(--text-primary);
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-
-.service-item {
-    background: white;
-    padding: 2rem;
-    border-radius: 0.75rem;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    border-left: 4px solid var(--secondary-color);
-    box-shadow: var(--shadow-sm);
-    transition: all 0.3s ease;
-    opacity: 0;
-    transform: translateX(-20px);
-}
-
-.service-item[data-scroll="true"] {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.service-item:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateX(5px);
-}
-
-.service-item h4 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-    color: var(--text-primary);
-}
-
-.service-item p {
-    color: var(--text-secondary);
-    line-height: 1.7;
 }
 
 /* Solutions Showcase */
@@ -1066,177 +1010,6 @@ section {
     border-color: var(--primary-color);
     color: var(--primary-color);
     transform: translateY(-2px);
-}
-
-/* Agentic Systems */
-.agentic-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 4rem;
-}
-
-.agentic-feature-card {
-    background: white;
-    padding: 2.5rem;
-    border-radius: 1rem;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    box-shadow: var(--shadow-sm);
-    text-align: center;
-    transition: all 0.3s ease;
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-.agentic-feature-card[data-scroll="true"] {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.agentic-feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
-}
-
-.feature-icon-large {
-    width: 80px;
-    height: 80px;
-    background: var(--gradient-1);
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem;
-    color: white;
-}
-
-.agentic-feature-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-}
-
-.agentic-feature-card p {
-    color: var(--text-secondary);
-    line-height: 1.7;
-}
-
-/* Research Section */
-.agentic-research {
-    margin-bottom: 4rem;
-}
-
-.research-title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: var(--text-primary);
-}
-
-.research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
-
-.research-item {
-    background: white;
-    padding: 2rem;
-    border-radius: 0.75rem;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    box-shadow: var(--shadow-sm);
-    transition: all 0.3s ease;
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-.research-item[data-scroll="true"] {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.research-item:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-3px);
-}
-
-.research-item h4 {
-    font-size: 1.125rem;
-    margin-bottom: 0.75rem;
-    color: var(--text-primary);
-}
-
-.research-item p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-/* Benefits Section */
-.agentic-benefits {
-    margin-top: 4rem;
-}
-
-.benefits-title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: var(--text-primary);
-}
-
-.benefits-list {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.benefit-item {
-    display: flex;
-    gap: 1.5rem;
-    padding: 2rem;
-    background: white;
-    border-radius: 0.75rem;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    box-shadow: var(--shadow-sm);
-    margin-bottom: 1.5rem;
-    transition: all 0.3s ease;
-    opacity: 0;
-    transform: translateX(-20px);
-}
-
-.benefit-item[data-scroll="true"] {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.benefit-item:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateX(5px);
-}
-
-.check-icon {
-    width: 40px;
-    height: 40px;
-    background: var(--gradient-1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: 700;
-    flex-shrink: 0;
-}
-
-.benefit-item h4 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-}
-
-.benefit-item p {
-    color: var(--text-secondary);
-    line-height: 1.7;
 }
 
 /* Contact Section */
@@ -1509,10 +1282,8 @@ section {
 
     .solutions-grid,
     .features-grid,
-    .services-grid,
     .showcase-grid,
-    .capabilities-grid,
-    .agentic-features {
+    .capabilities-grid {
         grid-template-columns: 1fr;
     }
 

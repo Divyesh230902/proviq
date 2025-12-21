@@ -1,11 +1,8 @@
 Proviq
 
-Total Solutions
-    - MLOPs
-    - Generative AI
-    - Agentic Workflows
-    - Active Learning to tailor task
+Parent Company
+    - OptRL: reinforcement learning decision intelligence
+    - TuskerAI: no-code computer vision for operations
 
-Tag Lines
-    - shaping awarness 
-
+Taglines
+    - The holding company for AI platforms that move from pilot to production

@@ -159,10 +159,6 @@ const staggerCards = (cards) => {
 const solutionCards = document.querySelectorAll('.solution-card');
 staggerCards(solutionCards);
 
-// Apply stagger to service items
-const serviceItems = document.querySelectorAll('.service-item');
-staggerCards(serviceItems);
-
 // Apply stagger to impact and process cards
 const impactCards = document.querySelectorAll('.impact-card');
 staggerCards(impactCards);
