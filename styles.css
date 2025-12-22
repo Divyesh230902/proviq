@@ -596,6 +596,35 @@ section {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.impact-definition {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.impact-definition-row {
+    display: grid;
+    grid-template-columns: minmax(180px, 220px) 1fr;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.impact-definition-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.impact-term {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.impact-desc {
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.6;
+}
+
 .impact-foot {
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.95rem;
@@ -1034,6 +1063,11 @@ section {
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .impact-definition-row {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
     }
 
 }
