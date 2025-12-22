@@ -23,7 +23,7 @@
     --shadow-md: 0 16px 30px rgba(15, 23, 42, 0.12);
     --shadow-lg: 0 24px 40px rgba(15, 23, 42, 0.16);
     --shadow-xl: 0 35px 55px rgba(15, 23, 42, 0.18);
-    --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+    --font-display: 'IBM Plex Sans', 'Segoe UI', sans-serif;
     --font-body: 'IBM Plex Sans', 'Segoe UI', sans-serif;
 }
 
@@ -574,26 +574,55 @@ section {
     margin-bottom: 1rem;
 }
 
-.impact-list {
+.process-diagram {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    margin: 1rem 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0 2rem;
     padding: 0;
-    color: rgba(255, 255, 255, 0.8);
+    position: relative;
 }
 
-.impact-list li {
-    display: flex;
-    gap: 0.5rem;
-    align-items: flex-start;
-    line-height: 1.5;
+.process-diagram::before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
 }
 
-.impact-list li::before {
-    content: '-';
-    color: rgba(255, 255, 255, 0.7);
+.process-step {
+    position: relative;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.process-index {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.process-label {
+    margin: 0;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.4;
 }
 
 .impact-definition {
@@ -1068,6 +1097,30 @@ section {
     .impact-definition-row {
         grid-template-columns: 1fr;
         gap: 0.5rem;
+    }
+
+    .process-diagram {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .process-diagram::before {
+        top: 0;
+        left: 22px;
+        right: auto;
+        width: 1px;
+        height: 100%;
+    }
+
+    .process-step {
+        text-align: left;
+        padding-top: 0;
+        padding-left: 3.5rem;
+    }
+
+    .process-index {
+        left: 0;
+        transform: none;
     }
 
 }

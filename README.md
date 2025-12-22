@@ -135,7 +135,7 @@ All styles are in `styles.css`. Key customization points:
 - **HTML5**: Semantic markup
 - **CSS3**: Modern styling with CSS Grid, Flexbox, and custom properties
 - **JavaScript (Vanilla)**: No dependencies, pure JavaScript
-- **Google Fonts**: IBM Plex Sans and Space Grotesk
+- **Google Fonts**: IBM Plex Sans
 - **Docker**: Containerization for easy deployment
 - **Nginx**: High-performance web server
 
