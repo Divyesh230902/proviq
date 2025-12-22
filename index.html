@@ -3,461 +3,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-    <title>Proviq — Pro • Vision • IQ | OptRL & TuskerAI</title>
-    <meta name="title" content="Proviq — Pro • Vision • IQ | OptRL & TuskerAI">
-    <meta name="description" content="Proviq is a systems-first AI company building long-vision intelligent platforms that learn, adapt, and improve inside real environments. Discover OptRL and TuskerAI.">
-    <meta name="keywords" content="long-vision AI, intelligent platforms, OptRL, TuskerAI, reinforcement learning, computer vision, agentic workflows, MLOps, knowledge graphs">
+    <title>Proviq - Pro Vision IQ | Long-vision AI platforms</title>
+    <meta name="description" content="Proviq builds long-vision AI systems that learn inside real environments. Explore OptRL, TuskerAI, and interactive playgrounds for entrepreneurs, researchers, and students.">
+    <meta name="keywords" content="Proviq, OptRL, TuskerAI, reinforcement learning, computer vision, agentic systems, AI platforms">
     <meta name="author" content="Proviq">
     <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://proviq.com/">
-    <meta property="og:title" content="Proviq — Pro • Vision • IQ | OptRL & TuskerAI">
-    <meta property="og:description" content="Systems-first AI company building long-vision intelligent platforms that learn, adapt, and improve inside real environments.">
-    <meta property="og:image" content="https://proviq.com/og-image.jpg">
-    <meta property="og:site_name" content="Proviq">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://proviq.com/">
-    <meta property="twitter:title" content="Proviq — Pro • Vision • IQ | OptRL & TuskerAI">
-    <meta property="twitter:description" content="Systems-first AI company building long-vision intelligent platforms that learn, adapt, and improve inside real environments.">
-    <meta property="twitter:image" content="https://proviq.com/twitter-image.jpg">
-    
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://proviq.com/">
-    
-    <!-- Favicon -->
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Proviq - Pro Vision IQ | Long-vision AI platforms">
+    <meta property="og:description" content="Systems-first AI platforms that learn, adapt, and improve inside real environments.">
+    <meta property="og:url" content="https://proviq.com/">
+    <meta property="og:image" content="https://proviq.com/og-image.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Proviq - Pro Vision IQ | Long-vision AI platforms">
+    <meta name="twitter:description" content="Systems-first AI platforms that learn, adapt, and improve inside real environments.">
+    <meta name="twitter:image" content="https://proviq.com/twitter-image.jpg">
+
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Proviq",
-      "url": "https://proviq.com",
-      "logo": "https://proviq.com/logo.png",
-      "description": "Systems-first AI company building long-vision intelligent platforms that learn, adapt, and improve inside real environments.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "contact@proviq.com",
-        "contactType": "Customer Service"
-      },
-      "sameAs": [
-        "https://optrl.com",
-        "https://www.tusker.ai"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Platforms",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "OptRL Platform",
-              "provider": {
-                "@type": "Organization",
-                "name": "OptRL"
-              }
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "TuskerAI Platform",
-              "provider": {
-                "@type": "Organization",
-                "name": "TuskerAI"
-              }
-            }
-          }
-        ]
-      }
-    }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Navigation -->
+<body data-page="home">
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <a href="#about">Proviq</a>
-                </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#impact" class="nav-link">Impact</a></li>
-                    <li><a href="#company" class="nav-link">Company</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
-                </ul>
-                <div class="nav-actions">
-                    <a href="#contact" class="btn btn-primary btn-nav">Contact Us</a>
-                </div>
-                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+        <div class="container nav-shell">
+            <a class="logo" href="index.html">Proviq<span>.</span></a>
+            <div class="nav-menu" id="navMenu">
+                <a class="nav-link" data-page="home" href="index.html">Home</a>
+                <a class="nav-link" data-page="platforms" href="platforms.html">Platforms</a>
+                <a class="nav-link" data-page="paths" href="paths.html">Paths</a>
+                <a class="nav-link" data-page="playgrounds" href="playgrounds.html">Playgrounds</a>
+                <a class="nav-link" href="index.html#contact">Contact</a>
             </div>
+            <div class="nav-actions">
+                <a class="btn btn-primary" href="playgrounds.html">Start Playing</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="about" class="hero">
-        <div class="hero-background"></div>
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-content">
-                    <p class="hero-eyebrow">Proviq — Pro • Vision • IQ</p>
-                    <h1 class="hero-title">
-                        AI systems that learn inside real environments
-                    </h1>
-                    <p class="hero-subtitle">
-                        Integrating Generative AI which learns from you.
-                    </p>
-                    <p class="hero-description">
-                        Know how you can transform your platform by actively evolving systems.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#company" class="btn btn-primary">Explore the Platforms</a>
-                        <a href="#services" class="btn btn-secondary">View Services</a>
+    <main>
+        <header class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy" data-animate>
+                    <p class="eyebrow">Proviq - Pro Vision IQ</p>
+                    <h1>Long-vision AI that learns inside real environments.</h1>
+                    <p>Proviq is a systems-first AI company building intelligent platforms that evolve with your data, users, and operational reality. Explore OptRL and TuskerAI, or jump into the playgrounds to feel the difference.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="playgrounds.html">Enter the playgrounds</a>
+                        <a class="btn btn-secondary" href="paths.html">Choose your path</a>
                     </div>
-                </div>
-                <div class="hero-panel" data-scroll>
-                    <div class="panel-badge">Proactive Intelligence</div>
-                    <h3>Specialized initiatives with distinct focus</h3>
-                    <ul class="panel-list">
-                        <li><span>01</span> OptRL — real-time learning and decision optimization.</li>
-                        <li><span>02</span> TuskerAI — no-code computer vision intelligence.</li>
-                        <li><span>03</span> Vision, memory, feedback, and intent at the core.</li>
-                    </ul>
-                    <a href="#company" class="panel-link">Explore the platforms →</a>
-                </div>
-            </div>
-            <div class="about-details" data-scroll>
-                <div class="about-copy">
-                    <p>Proviq is a systems-first AI company focused on building long-vision intelligent platforms that don't just automate tasks, but learn, adapt, and improve inside real environments. We design and deploy AI systems that evolve with your data, your users, and your operational reality.</p>
-                    <p>Proviq acts as the host organization for multiple specialized initiatives, each addressing a critical layer of modern intelligence infrastructure. Today, this includes OptRL and TuskerAI, with more platforms to follow.</p>
-                </div>
-                <div class="about-highlight">
-                    <h3>Proactive intelligence</h3>
-                    <p>AI systems with vision, memory, feedback, and intent.</p>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse"></div>
-        </div>
-    </section>
-
-    <!-- Impact Section -->
-    <section id="impact" class="impact-section">
-        <div class="container">
-            <div class="section-header light">
-                <p class="section-eyebrow">Impact</p>
-                <h2 class="section-title">From static AI to living, learning systems</h2>
-                <p class="section-subtitle">Systems-first intelligence that adapts inside real environments.</p>
-            </div>
-            <div class="impact-stack">
-                <article class="impact-panel impact-panel--what" data-scroll>
-                    <div class="impact-panel-header">
-                        <p class="impact-panel-kicker">What We Do</p>
-                        <h3>Living, learning systems</h3>
-                        <p>We help organizations move from static AI integrations to living, learning systems.</p>
-                    </div>
-                    <ul class="impact-points">
-                        <li>Observe real-world outcomes</li>
-                        <li>Learn from user and system feedback</li>
-                        <li>Adapt policies, decisions, and representations over time</li>
-                        <li>Remain aligned with operational constraints</li>
-                    </ul>
-                    <p class="impact-foot">Our work spans agentic systems, real-time learning, visual intelligence, and decision optimization — all grounded in production-ready engineering.</p>
-                </article>
-                <article class="impact-panel impact-panel--deliver" data-scroll>
-                    <div class="impact-panel-header">
-                        <p class="impact-panel-kicker">How We Deliver</p>
-                        <h3>Modular platforms, measurable impact</h3>
-                        <p>Proviq delivers intelligence through modular, composable platforms that integrate directly into your existing infrastructure.</p>
-                    </div>
-                    <ol class="impact-flow" aria-label="How We Deliver process">
-                        <li class="impact-flow-step">
-                            <span class="impact-flow-index">01</span>
-                            <div>
-                                <h4>No rip-and-replace</h4>
-                                <p>AI adapts to your systems, not the other way around.</p>
-                            </div>
-                        </li>
-                        <li class="impact-flow-step">
-                            <span class="impact-flow-index">02</span>
-                            <div>
-                                <h4>Feedback-driven learning loops</h4>
-                                <p>Every action improves future decisions.</p>
-                            </div>
-                        </li>
-                        <li class="impact-flow-step">
-                            <span class="impact-flow-index">03</span>
-                            <div>
-                                <h4>Traceable and controllable intelligence</h4>
-                                <p>Decisions are observable, auditable, and tunable.</p>
-                            </div>
-                        </li>
-                        <li class="impact-flow-step">
-                            <span class="impact-flow-index">04</span>
-                            <div>
-                                <h4>Scalable by design</h4>
-                                <p>From pilot environments to enterprise scale.</p>
-                            </div>
-                        </li>
-                    </ol>
-                    <p class="impact-foot">We combine reinforcement learning, generative AI, computer vision, and systems engineering to deploy AI that survives real operational complexity.</p>
-                </article>
-                <article class="impact-panel impact-panel--why" data-scroll>
-                    <div class="impact-panel-header">
-                        <p class="impact-panel-kicker">Why Proviq</p>
-                        <h3>Mission, vision, and pillars</h3>
-                        <p>Proviq is not a single product company — it is an intelligence architecture company.</p>
-                    </div>
-                    <div class="impact-mission-vision">
-                        <div class="impact-mv-card">
-                            <span class="impact-chip">Mission</span>
-                            <p>Build long-vision intelligent platforms that learn, adapt, and improve inside real environments.</p>
+                    <div class="hero-meta">
+                        <div class="hero-meta-item">
+                            <span>Platforms</span>
+                            <strong>OptRL + TuskerAI</strong>
                         </div>
-                        <div class="impact-mv-card">
-                            <span class="impact-chip">Vision</span>
-                            <p>AI systems with vision, memory, feedback, and intent.</p>
+                        <div class="hero-meta-item">
+                            <span>Core signals</span>
+                            <strong>Vision, memory, feedback, intent</strong>
+                        </div>
+                        <div class="hero-meta-item">
+                            <span>Delivery style</span>
+                            <strong>No rip-and-replace</strong>
                         </div>
                     </div>
-                    <p>By combining OptRL's decision intelligence and TuskerAI's visual intelligence, Proviq delivers systems that:</p>
-                    <div class="impact-pill-list">
-                        <span>See</span>
-                        <span>Decide</span>
-                        <span>Learn</span>
-                        <span>Adapt</span>
-                    </div>
-                    <p class="impact-quote">Proviq builds AI with vision — and the IQ to sustain it.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Company Overview -->
-    <section id="company" class="solutions-overview">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-eyebrow">Company</p>
-                <h2 class="section-title">Our Platforms</h2>
-                <p class="section-subtitle">Two specialized initiatives addressing critical layers of modern intelligence infrastructure.</p>
-            </div>
-            <div class="solutions-grid">
-                <article class="solution-card platform-card" data-scroll>
-                    <div class="solution-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Reinforcement Learning Icon">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <h3>OptRL</h3>
-                    <p class="platform-tagline">Realtime Learning with OptRL — From Rewards to Reality.</p>
-                    <p class="platform-summary">OptRL is Proviq's real-time learning and decision optimization platform for environments where actions matter, outcomes unfold over time, and optimal decisions cannot be hard-coded.</p>
-                    <ul class="platform-list">
-                        <li>Learn from delayed and sparse feedback</li>
-                        <li>Optimize policies under real-world constraints</li>
-                        <li>Adapt continuously as environments change</li>
-                        <li>Maintain decision traces for analysis and control</li>
-                    </ul>
-                    <p class="platform-impact"><strong>Impact:</strong> OptRL transforms workflows, recommendation systems, and operational pipelines into self-improving decision engines.</p>
-                    <div class="solution-links">
-                        <a href="https://optrl.com" target="_blank" rel="noopener noreferrer" class="solution-link external" aria-label="Visit OptRL website">Visit OptRL →</a>
-                    </div>
-                </article>
-                <article class="solution-card platform-card" data-scroll>
-                    <div class="solution-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Computer Vision Icon">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                            <circle cx="12" cy="12" r="3"/>
-                        </svg>
-                    </div>
-                    <h3>TuskerAI</h3>
-                    <p class="platform-tagline">Enable Visual Intelligence in your existing infrastructure with TuskerAI.</p>
-                    <p class="platform-summary">TuskerAI is Proviq's no-code and low-code computer vision intelligence platform designed for rapid deployment at scale.</p>
-                    <ul class="platform-list">
-                        <li>Turn cameras and video streams into intelligent sensors</li>
-                        <li>Detect, track, and reason about visual events in real time</li>
-                        <li>Integrate visual insights into existing systems without ML expertise</li>
-                        <li>Continuously improve vision models through feedback and usage</li>
-                    </ul>
-                    <p class="platform-impact"><strong>Impact:</strong> TuskerAI converts raw visual data into actionable intelligence for vigilance, safety, analytics, and automation.</p>
-                    <div class="solution-links">
-                        <a href="https://www.tusker.ai" target="_blank" rel="noopener noreferrer" class="solution-link external" aria-label="Visit TuskerAI website">Visit TuskerAI →</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-eyebrow">Services</p>
-                <h2 class="section-title">Focused AI services</h2>
-            </div>
-            <div class="services-grid">
-                <article class="service-card" data-scroll>
-                    <h3>Agentic Workflows</h3>
-                    <p>Design and deployment of autonomous and semi-autonomous agents that plan, act, observe outcomes, and adapt over time within structured environments.</p>
-                </article>
-                <article class="service-card" data-scroll>
-                    <h3>MLOps</h3>
-                    <p>Production-grade pipelines for training, deploying, monitoring, and evolving machine learning models with reliability, versioning, and governance.</p>
-                </article>
-                <article class="service-card" data-scroll>
-                    <h3>Video Vigilance Systems</h3>
-                    <p>End-to-end intelligent video systems built on TuskerAI, enabling real-time detection, alerts, and situational awareness.</p>
-                </article>
-                <article class="service-card" data-scroll>
-                    <h3>Generative AI Integrations</h3>
-                    <p>Seamless integration of generative models into business workflows, applications, and decision pipelines — grounded in domain context and feedback.</p>
-                </article>
-                <article class="service-card" data-scroll>
-                    <h3>OpenMCP Servers</h3>
-                    <p>Open, extensible Model Context Protocol (MCP) servers enabling structured interaction between models, tools, environments, and agents.</p>
-                </article>
-                <article class="service-card" data-scroll>
-                    <h3>Recommendation Engines</h3>
-                    <p>Adaptive recommendation systems powered by reinforcement learning, optimizing long-term outcomes rather than short-term clicks.</p>
-                </article>
-                <article class="service-card" data-scroll>
-                    <h3>Knowledge Graphs & Information Retrieval</h3>
-                    <p>Graph-based intelligence systems that connect data, context, and meaning — enabling explainable retrieval and reasoning across complex domains.</p>
-                </article>
-                <article class="service-card" data-scroll>
-                    <h3>Environment Adaptation Services powered by Reinforcement Learning</h3>
-                    <p>Custom environment modeling and RL-powered adaptation layers that allow existing systems to learn optimal behavior under real operational constraints.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h2>Contact Us</h2>
-                    <p>Share your business use case and we will connect you with the right team.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <strong>Email</strong>
-                            <p>contact@proviq.com</p>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Location</strong>
-                            <p>Remote-first, global delivery</p>
-                        </div>
-                    </div>
-                    <div class="contact-actions">
-                        <a href="#contactForm" class="btn btn-secondary">Schedule a Call</a>
-                        <span class="contact-note">Response within 2 business days.</span>
-                    </div>
-                    <p class="contact-tagline">Proviq builds AI with vision — and the IQ to sustain it.</p>
                 </div>
-                <form class="contact-form" id="contactForm" aria-label="Contact form">
-                    <div class="form-group">
-                        <label for="fullName">Full Name</label>
-                        <input type="text" id="fullName" name="fullName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="workEmail">Work Email</label>
-                        <input type="email" id="workEmail" name="workEmail" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="companyName">Company</label>
-                        <input type="text" id="companyName" name="companyName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="primaryObjective">Primary Objective</label>
-                        <select id="primaryObjective" name="primaryObjective" required>
-                            <option value="">Select an objective</option>
-                            <option value="optrl">OptRL</option>
-                            <option value="tuskerai">TuskerAI</option>
-                            <option value="agentic-workflows">Agentic Workflows</option>
-                            <option value="mlops">MLOps</option>
-                            <option value="video-vigilance">Video Vigilance Systems</option>
-                            <option value="genai-integrations">Generative AI Integrations</option>
-                            <option value="openmcp">OpenMCP Servers</option>
-                            <option value="recommendation">Recommendation Engines</option>
-                            <option value="knowledge-graphs">Knowledge Graphs & Information Retrieval</option>
-                            <option value="environment-adaptation">Environment Adaptation Services</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">How can we help?</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" aria-label="Submit contact form">Submit Request</button>
-                </form>
+                <div class="hero-panel" data-animate>
+                    <span class="hero-tag">Proactive intelligence</span>
+                    <h3>Systems that observe, learn, and adapt in the real world.</h3>
+                    <ul>
+                        <li><span>01</span> Real-time decision optimization with OptRL.</li>
+                        <li><span>02</span> Visual intelligence in production with TuskerAI.</li>
+                        <li><span>03</span> Modular services across agents, MLOps, and knowledge graphs.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Footer -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">By the numbers</p>
+                    <h2>Focused platforms, measurable scope.</h2>
+                    <p>These stats highlight the active ingredients inside Proviq today. Metrics are grounded in platform scope, not customer claims.</p>
+                </div>
+                <div class="stats-grid">
+                    <article class="stat-card" data-animate>
+                        <div class="stat-value" data-count="2">2</div>
+                        <div class="stat-label">Platforms live</div>
+                        <p class="stat-note">OptRL for decision intelligence, TuskerAI for visual intelligence.</p>
+                    </article>
+                    <article class="stat-card" data-animate>
+                        <div class="stat-value" data-count="8">8</div>
+                        <div class="stat-label">Service lines</div>
+                        <p class="stat-note">Agentic workflows, MLOps, knowledge graphs, and more.</p>
+                    </article>
+                    <article class="stat-card" data-animate>
+                        <div class="stat-value" data-count="4">4</div>
+                        <div class="stat-label">Intelligence pillars</div>
+                        <p class="stat-note">See, Decide, Learn, Adapt are the core system signals.</p>
+                    </article>
+                    <article class="stat-card" data-animate>
+                        <div class="stat-value" data-count="3">3</div>
+                        <div class="stat-label">Playgrounds</div>
+                        <p class="stat-note">Hands-on labs to experience living AI behaviors.</p>
+                    </article>
+                </div>
+                <p class="note">Want performance metrics? The playgrounds simulate outcomes with transparent controls.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Paths</p>
+                    <h2>Built for entrepreneurs, researchers, and students.</h2>
+                    <p>Pick the path that matches your mission. Each path includes curated insights, experiments, and real system touchpoints.</p>
+                </div>
+                <div class="audience-grid">
+                    <article class="audience-card" data-animate>
+                        <span class="tag">Entrepreneurs</span>
+                        <h3>Ship adaptive intelligence faster.</h3>
+                        <p>Turn your product into a living system with feedback loops, traceable decisions, and scalable intelligence.</p>
+                        <ul class="card-list">
+                            <li>Go from prototype to live learning in weeks.</li>
+                            <li>Keep infrastructure intact with modular integration.</li>
+                            <li>Measure decisions, not just model accuracy.</li>
+                        </ul>
+                        <a class="card-cta" href="paths.html#entrepreneurs">Explore entrepreneur path <span>→</span></a>
+                    </article>
+                    <article class="audience-card" data-animate>
+                        <span class="tag">Researchers</span>
+                        <h3>Experiment inside real systems.</h3>
+                        <p>Use OptRL and TuskerAI to test learning behavior, policy stability, and data feedback at production scale.</p>
+                        <ul class="card-list">
+                            <li>Structured environments for real-time learning.</li>
+                            <li>Decision traces for analysis and reproducibility.</li>
+                            <li>Open MCP servers for tool access.</li>
+                        </ul>
+                        <a class="card-cta" href="paths.html#researchers">Explore researcher path <span>→</span></a>
+                    </article>
+                    <article class="audience-card" data-animate>
+                        <span class="tag">Students</span>
+                        <h3>Learn by building and testing.</h3>
+                        <p>Explore AI systems that adapt over time and understand what it takes to ship intelligence in the wild.</p>
+                        <ul class="card-list">
+                            <li>Playground challenges for RL and vision.</li>
+                            <li>Guided system maps and templates.</li>
+                            <li>Community labs and mentorship pathways.</li>
+                        </ul>
+                        <a class="card-cta" href="paths.html#students">Explore student path <span>→</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Platforms</p>
+                    <h2>Two initiatives, one intelligence architecture.</h2>
+                    <p>OptRL and TuskerAI deliver proactive intelligence across decisions and visuals.</p>
+                </div>
+                <div class="platform-grid">
+                    <article class="platform-card" data-animate>
+                        <span class="platform-flag">OptRL</span>
+                        <h3>From rewards to reality.</h3>
+                        <p>OptRL is a real-time learning and decision optimization platform for environments where actions matter, outcomes unfold over time, and optimal decisions cannot be hard-coded.</p>
+                        <ul class="card-list">
+                            <li>Learn from delayed and sparse feedback.</li>
+                            <li>Optimize policies under real-world constraints.</li>
+                            <li>Maintain decision traces for analysis and control.</li>
+                        </ul>
+                        <a class="card-cta" href="platforms.html#optrl">Explore OptRL <span>→</span></a>
+                    </article>
+                    <article class="platform-card" data-animate>
+                        <span class="platform-flag">TuskerAI</span>
+                        <h3>Visual intelligence at scale.</h3>
+                        <p>TuskerAI is a no-code and low-code computer vision intelligence platform designed for rapid deployment across complex environments.</p>
+                        <ul class="card-list">
+                            <li>Turn cameras into intelligent sensors.</li>
+                            <li>Detect, track, and reason in real time.</li>
+                            <li>Integrate visual insights without ML expertise.</li>
+                        </ul>
+                        <a class="card-cta" href="platforms.html#tuskerai">Explore TuskerAI <span>→</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Delivery</p>
+                    <h2>How Proviq deploys living intelligence.</h2>
+                    <p>Every deployment is modular, traceable, and designed to learn inside your operational reality.</p>
+                </div>
+                <div class="process-grid">
+                    <article class="process-card" data-animate>
+                        <span>01</span>
+                        <h4>Observe</h4>
+                        <p>Instrument outcomes, capture signals, and map decision context.</p>
+                    </article>
+                    <article class="process-card" data-animate>
+                        <span>02</span>
+                        <h4>Learn</h4>
+                        <p>Update policies through feedback-driven learning loops.</p>
+                    </article>
+                    <article class="process-card" data-animate>
+                        <span>03</span>
+                        <h4>Adapt</h4>
+                        <p>Continuously tune representations, constraints, and objectives.</p>
+                    </article>
+                    <article class="process-card" data-animate>
+                        <span>04</span>
+                        <h4>Scale</h4>
+                        <p>Expand from pilot to enterprise without ripping infrastructure.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Playgrounds</p>
+                    <h2>Feel the systems working.</h2>
+                    <p>Playgrounds reveal how Proviq systems respond to feedback, vision events, and agent workflows.</p>
+                </div>
+                <div class="playground-grid">
+                    <article class="playground-card" data-animate>
+                        <h3>Reward Shaping Lab</h3>
+                        <p>Explore how feedback cadence impacts policy stability and sample efficiency.</p>
+                        <a class="card-cta" href="playgrounds.html#reward-lab">Open the lab <span>→</span></a>
+                    </article>
+                    <article class="playground-card" data-animate>
+                        <h3>Vision Stream Lab</h3>
+                        <p>See how visual environments change model performance and alert precision.</p>
+                        <a class="card-cta" href="playgrounds.html#vision-lab">Open the lab <span>→</span></a>
+                    </article>
+                    <article class="playground-card" data-animate>
+                        <h3>Agentic Workflow Studio</h3>
+                        <p>Compose agent behaviors and track decision trace coverage.</p>
+                        <a class="card-cta" href="playgrounds.html#workflow-lab">Open the lab <span>→</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="cta-panel" data-animate>
+                    <div>
+                        <p class="eyebrow">Start now</p>
+                        <h2>Ready to build an AI system that learns in the wild?</h2>
+                        <p>We design living intelligence stacks for mission-critical environments. Let us map your first loop.</p>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" href="paths.html">Choose your path</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Talk with the Proviq team.</h2>
+                    <p>Share your use case and we will connect you with the right platform and team.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card" data-animate>
+                        <h3>Contact details</h3>
+                        <p>Proviq is a remote-first organization delivering intelligence platforms worldwide.</p>
+                        <div class="contact-details">
+                            <div>
+                                <span>Email</span>
+                                <p>contact@proviq.com</p>
+                            </div>
+                            <div>
+                                <span>Response time</span>
+                                <p>Within 2 business days.</p>
+                            </div>
+                            <div>
+                                <span>Focus</span>
+                                <p>OptRL, TuskerAI, and intelligence architecture consulting.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="fullName">Full name</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="workEmail">Work email</label>
+                            <input type="email" id="workEmail" name="workEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="companyName">Company</label>
+                            <input type="text" id="companyName" name="companyName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="primaryObjective">Primary objective</label>
+                            <select id="primaryObjective" name="primaryObjective" required>
+                                <option value="">Select an objective</option>
+                                <option value="optrl">OptRL</option>
+                                <option value="tuskerai">TuskerAI</option>
+                                <option value="agentic-workflows">Agentic Workflows</option>
+                                <option value="mlops">MLOps</option>
+                                <option value="video-vigilance">Video Vigilance Systems</option>
+                                <option value="genai-integrations">Generative AI Integrations</option>
+                                <option value="openmcp">OpenMCP Servers</option>
+                                <option value="recommendation">Recommendation Engines</option>
+                                <option value="knowledge-graphs">Knowledge Graphs</option>
+                                <option value="environment-adaptation">Environment Adaptation Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">How can we help?</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3>Proviq</h3>
-                    <p>Proviq builds AI with vision — and the IQ to sustain it.</p>
+                    <h4>Proviq</h4>
+                    <p>Proactive intelligence platforms with vision, memory, feedback, and intent.</p>
                 </div>
-                <div class="footer-column">
-                    <h4>Explore</h4>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#impact">Impact</a></li>
-                        <li><a href="#company">Company</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <h5>Explore</h5>
+                    <a href="index.html">Home</a>
+                    <a href="platforms.html">Platforms</a>
+                    <a href="paths.html">Paths</a>
+                    <a href="playgrounds.html">Playgrounds</a>
                 </div>
-                <div class="footer-column">
-                    <h4>Platforms</h4>
-                    <ul>
-                        <li><a href="https://optrl.com" target="_blank" rel="noopener noreferrer" class="external-link">OptRL <span class="external-arrow">→</span></a></li>
-                        <li><a href="https://www.tusker.ai" target="_blank" rel="noopener noreferrer" class="external-link">TuskerAI <span class="external-arrow">→</span></a></li>
-                    </ul>
+                <div class="footer-links">
+                    <h5>Platforms</h5>
+                    <a href="platforms.html#optrl">OptRL</a>
+                    <a href="platforms.html#tuskerai">TuskerAI</a>
+                    <a href="https://optrl.com" target="_blank" rel="noopener noreferrer">OptRL site</a>
+                    <a href="https://www.tusker.ai" target="_blank" rel="noopener noreferrer">TuskerAI site</a>
                 </div>
-                <div class="footer-column">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Agentic Workflows</a></li>
-                        <li><a href="#services">MLOps</a></li>
-                        <li><a href="#services">Video Vigilance Systems</a></li>
-                        <li><a href="#services">Generative AI Integrations</a></li>
-                        <li><a href="#services">OpenMCP Servers</a></li>
-                        <li><a href="#services">Recommendation Engines</a></li>
-                        <li><a href="#services">Knowledge Graphs & Information Retrieval</a></li>
-                        <li><a href="#services">Environment Adaptation Services</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <h5>Contact</h5>
+                    <a href="index.html#contact">Contact form</a>
+                    <a href="mailto:contact@proviq.com">contact@proviq.com</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Proviq. All rights reserved.</p>
-            </div>
+            <div class="footer-bottom">&copy; 2025 Proviq. All rights reserved.</div>
         </div>
     </footer>
 

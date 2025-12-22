@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proviq Playgrounds | Interactive AI Labs</title>
+    <meta name="description" content="Explore Proviq playgrounds: reward shaping, vision intelligence, and agentic workflow simulations.">
+    <meta name="keywords" content="AI playgrounds, reinforcement learning, computer vision, agentic workflows">
+    <meta name="author" content="Proviq">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://proviq.com/playgrounds.html">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="playgrounds">
+    <nav class="navbar">
+        <div class="container nav-shell">
+            <a class="logo" href="index.html">Proviq<span>.</span></a>
+            <div class="nav-menu" id="navMenu">
+                <a class="nav-link" data-page="home" href="index.html">Home</a>
+                <a class="nav-link" data-page="platforms" href="platforms.html">Platforms</a>
+                <a class="nav-link" data-page="paths" href="paths.html">Paths</a>
+                <a class="nav-link" data-page="playgrounds" href="playgrounds.html">Playgrounds</a>
+                <a class="nav-link" href="index.html#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a class="btn btn-primary" href="index.html#contact">Talk to the team</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="hero page-hero">
+            <div class="container hero-grid">
+                <div class="hero-copy" data-animate>
+                    <p class="eyebrow">Playgrounds</p>
+                    <h1>Touch the systems before you deploy them.</h1>
+                    <p>These interactive labs simulate how Proviq platforms learn and adapt. Metrics are simulated for exploration and do not represent customer results.</p>
+                    <span class="banner-note">Simulated metrics for exploration</span>
+                </div>
+                <div class="hero-panel" data-animate>
+                    <span class="hero-tag">Hands-on labs</span>
+                    <h3>Explore feedback, vision, and agent workflows.</h3>
+                    <ul>
+                        <li><span>01</span> Reward Shaping Lab for decision loops.</li>
+                        <li><span>02</span> Vision Stream Lab for visual intelligence.</li>
+                        <li><span>03</span> Agentic Workflow Studio for automation coverage.</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section id="reward-lab">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">OptRL Playground</p>
+                    <h2>Reward Shaping Lab</h2>
+                    <p>Adjust feedback cadence and delay to see how policy stability and sample efficiency respond.</p>
+                </div>
+                <div class="playground-grid">
+                    <article class="playground-card" data-animate data-playground="reward">
+                        <h3>Decision loop simulator</h3>
+                        <p>Tune feedback frequency and delay to visualize changes in learning behavior.</p>
+                        <div class="playground-controls">
+                            <div class="control-group">
+                                <label for="feedbackRange">Feedback frequency</label>
+                                <input type="range" id="feedbackRange" min="10" max="100" value="60" data-control="frequency">
+                            </div>
+                            <div class="control-group">
+                                <label for="delayRange">Reward delay</label>
+                                <input type="range" id="delayRange" min="0" max="120" value="40" data-control="delay">
+                            </div>
+                        </div>
+                        <div class="playground-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Sample efficiency</span>
+                                <div class="meter"><span data-meter="efficiency"></span></div>
+                                <span class="metric-value" data-value="efficiency">72%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Policy stability</span>
+                                <div class="meter"><span data-meter="stability"></span></div>
+                                <span class="metric-value" data-value="stability">65%</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision-lab">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">TuskerAI Playground</p>
+                    <h2>Vision Stream Lab</h2>
+                    <p>Select a scenario to explore how visual complexity influences alert precision and latency.</p>
+                </div>
+                <div class="playground-grid">
+                    <article class="playground-card" data-animate data-playground="vision">
+                        <h3>Scenario selector</h3>
+                        <p>Choose a vision environment and view simulated system metrics.</p>
+                        <div class="scenario-buttons" data-control="scenario">
+                            <button type="button" class="active" data-scenario="retail">Retail</button>
+                            <button type="button" data-scenario="logistics">Logistics</button>
+                            <button type="button" data-scenario="safety">Safety</button>
+                        </div>
+                        <div class="playground-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Scene density</span>
+                                <div class="meter"><span data-meter="density"></span></div>
+                                <span class="metric-value" data-value="density">68%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Alert precision</span>
+                                <div class="meter"><span data-meter="precision"></span></div>
+                                <span class="metric-value" data-value="precision">84%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Decision latency</span>
+                                <div class="meter"><span data-meter="latency"></span></div>
+                                <span class="metric-value" data-value="latency">45%</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="workflow-lab">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Agentic Playground</p>
+                    <h2>Workflow Studio</h2>
+                    <p>Compose agent workflows and track automation coverage and decision trace depth.</p>
+                </div>
+                <div class="playground-grid">
+                    <article class="playground-card" data-animate data-playground="workflow">
+                        <h3>Agent workflow builder</h3>
+                        <p>Select the steps your system performs and watch the coverage metrics update.</p>
+                        <div class="workflow-steps">
+                            <label><input type="checkbox" data-step="observe" checked> Observe signals</label>
+                            <label><input type="checkbox" data-step="decide" checked> Decide actions</label>
+                            <label><input type="checkbox" data-step="act"> Execute actions</label>
+                            <label><input type="checkbox" data-step="learn"> Learn from feedback</label>
+                        </div>
+                        <div class="playground-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Automation coverage</span>
+                                <div class="meter"><span data-meter="coverage"></span></div>
+                                <span class="metric-value" data-value="coverage">50%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Decision trace depth</span>
+                                <div class="meter"><span data-meter="trace"></span></div>
+                                <span class="metric-value" data-value="trace">55%</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="cta-panel" data-animate>
+                    <div>
+                        <p class="eyebrow">Apply the learning</p>
+                        <h2>Ready to map your real environment?</h2>
+                        <p>Bring your use case, and we will design the first feedback loop together.</p>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" href="index.html#contact">Contact the team</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h4>Proviq</h4>
+                    <p>Proactive intelligence platforms with vision, memory, feedback, and intent.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Explore</h5>
+                    <a href="index.html">Home</a>
+                    <a href="platforms.html">Platforms</a>
+                    <a href="paths.html">Paths</a>
+                    <a href="playgrounds.html">Playgrounds</a>
+                </div>
+                <div class="footer-links">
+                    <h5>Platforms</h5>
+                    <a href="platforms.html#optrl">OptRL</a>
+                    <a href="platforms.html#tuskerai">TuskerAI</a>
+                    <a href="https://optrl.com" target="_blank" rel="noopener noreferrer">OptRL site</a>
+                    <a href="https://www.tusker.ai" target="_blank" rel="noopener noreferrer">TuskerAI site</a>
+                </div>
+                <div class="footer-links">
+                    <h5>Contact</h5>
+                    <a href="index.html#contact">Contact form</a>
+                    <a href="mailto:contact@proviq.com">contact@proviq.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2025 Proviq. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
