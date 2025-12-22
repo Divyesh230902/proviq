@@ -539,17 +539,11 @@ section {
     z-index: 1;
 }
 
-.impact-layout {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.impact-flow {
     margin-top: 2rem;
-}
-
-.impact-block {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 1.25rem;
+    border-radius: 1.5rem;
     padding: 2.5rem;
     box-shadow: var(--shadow-md);
     backdrop-filter: blur(8px);
@@ -558,33 +552,31 @@ section {
     transition: all 0.3s ease;
 }
 
-.impact-block[data-scroll="true"] {
+.impact-flow[data-scroll="true"] {
     opacity: 1;
     transform: translateY(0);
 }
 
-.impact-block h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+.impact-flow-header h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
 }
 
-.impact-block p {
+.impact-flow-header p {
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.7;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.process-diagram {
-    list-style: none;
+.impact-flow-track {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 1.5rem;
     margin: 1.5rem 0 2rem;
-    padding: 0;
     position: relative;
 }
 
-.process-diagram::before {
+.impact-flow-track::before {
     content: '';
     position: absolute;
     top: 22px;
@@ -594,13 +586,13 @@ section {
     background: rgba(255, 255, 255, 0.2);
 }
 
-.process-step {
+.impact-flow-step {
     position: relative;
     text-align: center;
     padding-top: 3rem;
 }
 
-.process-index {
+.impact-flow-index {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -618,7 +610,7 @@ section {
     z-index: 1;
 }
 
-.process-label {
+.impact-flow-label {
     margin: 0;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.9);
@@ -659,28 +651,36 @@ section {
     font-size: 0.95rem;
 }
 
-.impact-why {
-    margin-top: 3rem;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+.impact-panels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.impact-panel {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 1.5rem;
     padding: 2.5rem;
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(8px);
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.3s ease;
 }
 
-.impact-why[data-scroll="true"] {
+.impact-panel[data-scroll="true"] {
     opacity: 1;
     transform: translateY(0);
 }
 
-.impact-why h3 {
-    font-size: 1.6rem;
+.impact-panel h3 {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.impact-why p {
+.impact-panel p {
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.7;
     margin-bottom: 1rem;
@@ -1099,12 +1099,12 @@ section {
         gap: 0.5rem;
     }
 
-    .process-diagram {
+    .impact-flow-track {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
-    .process-diagram::before {
+    .impact-flow-track::before {
         top: 0;
         left: 22px;
         right: auto;
@@ -1112,13 +1112,13 @@ section {
         height: 100%;
     }
 
-    .process-step {
+    .impact-flow-step {
         text-align: left;
         padding-top: 0;
         padding-left: 3.5rem;
     }
 
-    .process-index {
+    .impact-flow-index {
         left: 0;
         transform: none;
     }

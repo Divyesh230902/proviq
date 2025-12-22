@@ -143,9 +143,9 @@ staggerCards(solutionCards);
 const serviceCards = document.querySelectorAll('.service-card');
 staggerCards(serviceCards);
 
-// Apply stagger to impact blocks
-const impactBlocks = document.querySelectorAll('.impact-block');
-staggerCards(impactBlocks);
+// Apply stagger to impact sections
+const impactFlow = document.querySelectorAll('.impact-flow');
+staggerCards(impactFlow);
 
-const impactWhy = document.querySelectorAll('.impact-why');
-staggerCards(impactWhy);
+const impactPanels = document.querySelectorAll('.impact-panel');
+staggerCards(impactPanels);
