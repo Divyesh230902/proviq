@@ -1,126 +1,171 @@
-## Proviq — Pro • Vision • IQ
+Proviq — Pro • Vision • IQ
+Building Adaptive AI Systems for the Real World
 
-**Proviq** is a systems-first AI company focused on building **long-vision intelligent platforms** that don’t just automate tasks, but **learn, adapt, and improve inside real environments**.
-We design and deploy AI systems that evolve with your data, your users, and your operational reality.
+Proviq is a systems-first AI company focused on building long-vision intelligent platforms that don’t just automate tasks — they learn, adapt, and improve inside real operational environments.
 
-Proviq acts as the **host organization** for multiple specialized initiatives, each addressing a critical layer of modern intelligence infrastructure. Today, this includes **OptRL** and **TuskerAI**, with more platforms to follow.
+We design and deploy adaptive AI systems that evolve with your data, your users, and your infrastructure. Our work spans Agentic AI, Reinforcement Learning, Generative AI, Computer Vision, IoT intelligence, and production-grade software systems.
 
-At its core, Proviq stands for **proactive intelligence** — AI systems with vision, memory, feedback, and intent.
+Proviq serves as a host intelligence organization, developing and operating multiple specialized platforms that together form a modern intelligence stack — designed to grow as technologies and paradigms shift.
 
----
+At its core, Proviq stands for proactive intelligence: AI systems with vision, memory, feedback, intent, and the ability to adapt continuously.
 
-## What We Do
+What Proviq Does
+From Static AI to Living Intelligence Systems
 
-We help organizations move from **static AI integrations** to **living, learning systems**.
+Most AI deployments today are static — trained once, deployed once, and slowly degraded by reality.
 
-Instead of treating AI as a one-time deployment, we design environments where models:
+Proviq helps organizations move beyond that.
 
-* Observe real-world outcomes
-* Learn from user and system feedback
-* Adapt policies, decisions, and representations over time
-* Remain aligned with operational constraints
+We design learning environments where AI systems:
 
-Our work spans agentic systems, real-time learning, visual intelligence, and decision optimization — all grounded in production-ready engineering.
+Observe real-world signals across software, sensors, users, and operations
 
----
+Learn from delayed, sparse, and imperfect feedback
 
-## How We Deliver
+Adapt decisions, policies, and workflows over time
 
-Proviq delivers intelligence through **modular, composable platforms** that integrate directly into your existing infrastructure.
+Remain aligned with operational constraints, safety, and governance
 
-Our delivery philosophy:
+The result is AI that improves with use, not systems that require constant retraining or replacement.
 
-* **No rip-and-replace** — AI adapts to your systems, not the other way around
-* **Feedback-driven learning loops** — every action improves future decisions
-* **Traceable and controllable intelligence** — decisions are observable, auditable, and tunable
-* **Scalable by design** — from pilot environments to enterprise scale
+Across domains, Proviq-powered systems have enabled:
 
-We combine reinforcement learning, generative AI, computer vision, and systems engineering to deploy AI that survives real operational complexity.
+Up to 25× productivity gains in AI development and deployment workflows
 
----
+Up to 75% cost optimization by eliminating brittle pipelines and manual iteration
 
-## Our Platforms
+Production-ready deployments in hours instead of months
 
-### OptRL — *From Rewards to Reality*
+How We Deliver Intelligence
+Modular. Composable. Infrastructure-Friendly.
 
-**OptRL** is Proviq’s real-time learning and decision optimization platform.
-It focuses on environments where actions matter, outcomes unfold over time, and optimal decisions cannot be hard-coded.
+Proviq delivers intelligence through modular platforms and services that integrate directly into existing infrastructure.
+
+Our delivery principles are simple:
+
+No rip-and-replace — AI adapts to your systems
+
+Environment-aware learning — intelligence is shaped by real conditions
+
+Feedback-driven loops — every action improves future decisions
+
+Traceable and auditable intelligence — decisions you can inspect and govern
+
+Scalable by design — from pilots to enterprise scale
+
+We combine reinforcement learning, agentic systems, generative models, visual intelligence, IoT integration, and MLOps to deploy AI that survives real operational complexity.
+
+Our Platforms
+OptRL — From Rewards to Reality
+
+OptRL is Proviq’s real-time reinforcement learning and decision optimization platform, built for environments where:
+
+Actions have delayed or uncertain outcomes
+
+Optimal behavior cannot be hard-coded
+
+Feedback is sparse, noisy, or indirect
+
+Conditions evolve continuously
 
 OptRL enables systems to:
 
-* Learn from delayed and sparse feedback
-* Optimize policies under real-world constraints
-* Adapt continuously as environments change
-* Maintain decision traces for analysis and control
+Learn optimal policies from real operational feedback
 
-**Impact:**
-OptRL transforms workflows, recommendation systems, and operational pipelines into **self-improving decision engines**. It brings reinforcement learning out of research and into production — where rewards reflect reality, not assumptions.
+Optimize decisions under constraints and uncertainty
 
----
+Adapt continuously as environments change
 
-### TuskerAI — *Enable Visual Intelligence in Your Existing Infrastructure*
+Maintain full decision traces for analysis, safety, and control
 
-**TuskerAI** is Proviq’s no-code and low-code **computer vision intelligence platform** designed for rapid deployment at scale.
+Impact
+OptRL transforms workflows, recommendation engines, and operational pipelines into self-improving decision systems — bringing reinforcement learning out of research and into production, where rewards reflect reality rather than assumptions.
 
-TuskerAI allows organizations to:
+Visual & Sensor Intelligence — Perception That Feeds Decisions
 
-* Turn cameras and video streams into intelligent sensors
-* Detect, track, and reason about visual events in real time
-* Integrate visual insights into existing systems without ML expertise
-* Continuously improve vision models through feedback and usage
+Proviq provides a production-ready visual and sensor intelligence layer that turns raw video and sensor data into structured, actionable signals.
 
-**Impact:**
-TuskerAI converts raw visual data into **actionable intelligence** — powering video vigilance, monitoring, safety, analytics, and automation without disrupting current infrastructure.
+This layer enables organizations to:
 
----
+Convert cameras and sensors into intelligent perception systems
 
-## Services
+Detect, classify, and track real-world events in real time
 
-### Agentic Workflows
+Deploy AI using no-code and low-code workflows
 
-Design and deployment of autonomous and semi-autonomous agents that plan, act, observe outcomes, and adapt over time within structured environments.
+Operate across edge, on-prem, and cloud environments
 
-### MLOps
+Continuously improve accuracy through real-world feedback
 
-Production-grade pipelines for training, deploying, monitoring, and evolving machine learning models with reliability, versioning, and governance.
+Visual intelligence is not treated as a standalone feature.
+It acts as a perception layer that feeds:
 
-### Video Vigilance Systems
+Agentic workflows
 
-End-to-end intelligent video systems built on TuskerAI, enabling real-time detection, alerts, and situational awareness.
+Reinforcement learning environments
 
-### Generative AI Integrations
+Alerting and monitoring systems
 
-Seamless integration of generative models into business workflows, applications, and decision pipelines — grounded in domain context and feedback.
+Analytics and automation pipelines
 
-### OpenMCP Servers
+Outcome
+Video and sensor data move from passive observation to active operational intelligence, enabling safety, monitoring, automation, compliance, and adaptive decision-making — without disrupting existing infrastructure.
 
-Open, extensible Model Context Protocol (MCP) servers enabling structured interaction between models, tools, environments, and agents.
+Services
+Agentic AI Systems
 
-### Recommendation Engines
+Design and deployment of autonomous and semi-autonomous agents that plan, act, observe outcomes, and adapt over time.
 
-Adaptive recommendation systems powered by reinforcement learning, optimizing long-term outcomes rather than short-term clicks.
+Generative AI Integrations
 
-### Knowledge Graphs & Information Retrieval
+Production-grade integration of generative models into workflows, grounded in domain context and system feedback.
 
-Graph-based intelligence systems that connect data, context, and meaning — enabling explainable retrieval and reasoning across complex domains.
+Reinforcement Learning & Environment Design
 
-### Environment Adaptation Services (Reinforcement Learning)
+Custom RL environments that allow existing systems to learn optimal behavior under real operational constraints.
 
-Custom environment modeling and RL-powered adaptation layers that allow existing systems to learn optimal behavior under real operational constraints.
+Computer Vision & Sensor Intelligence
 
----
+End-to-end perception systems for real-time detection, alerts, analytics, and learning.
 
-## Why Proviq
+IoT & Edge Intelligence
 
-Proviq is not a single product company — it is an **intelligence architecture company**.
+Embedding intelligence directly into physical and cyber-physical systems for local adaptation and control.
 
-By combining **OptRL’s decision intelligence** and **TuskerAI’s visual intelligence**, Proviq delivers systems that:
+MLOps & AI Infrastructure
 
-* See
-* Decide
-* Learn
-* Adapt
+Reliable pipelines for training, deployment, monitoring, versioning, and governance.
+
+Recommendation & Decision Engines
+
+Adaptive systems optimized for long-term outcomes, not short-term metrics.
+
+Knowledge Graphs & Intelligent Retrieval
+
+Graph-based systems connecting data, context, and meaning for explainable reasoning and retrieval.
+
+Why Proviq
+
+Proviq is not a single-product AI company.
+
+It is an intelligence architecture company — designed to host, integrate, and evolve multiple AI paradigms as the landscape changes.
+
+By combining:
+
+Decision intelligence (OptRL)
+
+Visual and sensor intelligence
+
+Agentic and generative systems
+
+Reinforcement learning and feedback loops
+
+Production-grade software engineering
+
+Proviq builds systems that:
+
+Observe. Decide. Learn. Adapt.
 
 All while operating inside the reality of your infrastructure.
 
-**Proviq builds AI with vision — and the IQ to sustain it.**
+Proviq builds AI with vision — and the IQ to sustain it.

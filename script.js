@@ -75,6 +75,12 @@ if (animatedItems.length) {
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const countItems = document.querySelectorAll('[data-count]');
 
+const formatCount = (value, element) => {
+    const prefix = element.dataset.prefix || '';
+    const suffix = element.dataset.suffix || '';
+    return `${prefix}${value}${suffix}`;
+};
+
 const animateCount = (element) => {
     const target = Number(element.dataset.count);
     if (Number.isNaN(target)) {
@@ -82,7 +88,7 @@ const animateCount = (element) => {
     }
 
     if (prefersReducedMotion) {
-        element.textContent = target;
+        element.textContent = formatCount(target, element);
         return;
     }
 
@@ -92,7 +98,7 @@ const animateCount = (element) => {
     const tick = (now) => {
         const progress = Math.min((now - startTime) / duration, 1);
         const value = Math.round(target * progress);
-        element.textContent = value;
+        element.textContent = formatCount(value, element);
         if (progress < 1) {
             requestAnimationFrame(tick);
         }
