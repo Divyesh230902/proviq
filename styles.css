@@ -170,6 +170,7 @@ section {
     height: 80px;
     display: flex;
     align-items: center;
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     background: rgba(248, 243, 236, 0.85);
     border-bottom: 1px solid rgba(11, 18, 32, 0.12);
