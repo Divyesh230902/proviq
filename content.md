@@ -18,13 +18,15 @@ Proviq helps organizations move beyond that.
 
 We design learning environments where AI systems:
 
-Observe real-world signals across software, sensors, users, and operations
+Observe real-world signals across software, devices, users, and operations
+
+Decide actions with traceable policies and operational constraints
 
 Learn from delayed, sparse, and imperfect feedback
 
 Adapt decisions, policies, and workflows over time
 
-Remain aligned with operational constraints, safety, and governance
+All while staying aligned with operational constraints, safety, and governance
 
 The result is AI that improves with use, not systems that require constant retraining or replacement.
 
@@ -53,7 +55,7 @@ Traceable and auditable intelligence — decisions you can inspect and govern
 
 Scalable by design — from pilots to enterprise scale
 
-We combine reinforcement learning, agentic systems, generative models, visual intelligence, IoT integration, and MLOps to deploy AI that survives real operational complexity.
+We combine reinforcement learning, agentic systems, generative models, computer vision, IoT integration, and MLOps to deploy AI that survives real operational complexity.
 
 Our Platforms
 OptRL — From Rewards to Reality
@@ -81,13 +83,13 @@ Maintain full decision traces for analysis, safety, and control
 Impact
 OptRL transforms workflows, recommendation engines, and operational pipelines into self-improving decision systems — bringing reinforcement learning out of research and into production, where rewards reflect reality rather than assumptions.
 
-Visual & Sensor Intelligence — Perception That Feeds Decisions
+Computer Vision Platform — Perception That Feeds Decisions
 
-Proviq provides a production-ready visual and sensor intelligence layer that turns raw video and sensor data into structured, actionable signals.
+Proviq provides a production-ready computer vision layer that turns raw video into structured, actionable signals.
 
 This layer enables organizations to:
 
-Convert cameras and sensors into intelligent perception systems
+Convert camera feeds into intelligent perception systems
 
 Detect, classify, and track real-world events in real time
 
@@ -109,7 +111,7 @@ Alerting and monitoring systems
 Analytics and automation pipelines
 
 Outcome
-Video and sensor data move from passive observation to active operational intelligence, enabling safety, monitoring, automation, compliance, and adaptive decision-making — without disrupting existing infrastructure.
+Video data move from passive observation to active operational intelligence, enabling safety, monitoring, automation, compliance, and adaptive decision-making — without disrupting existing infrastructure.
 
 Services
 Agentic AI Systems
@@ -124,7 +126,7 @@ Reinforcement Learning & Environment Design
 
 Custom RL environments that allow existing systems to learn optimal behavior under real operational constraints.
 
-Computer Vision & Sensor Intelligence
+Computer Vision
 
 End-to-end perception systems for real-time detection, alerts, analytics, and learning.
 
@@ -154,7 +156,7 @@ By combining:
 
 Decision intelligence (OptRL)
 
-Visual and sensor intelligence
+Computer vision
 
 Agentic and generative systems
 

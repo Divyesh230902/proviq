@@ -566,9 +566,16 @@ section {
 }
 
 .signal-words span {
-    padding: 0.4rem 0.75rem;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.15);
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    white-space: nowrap;
+}
+
+.signal-words span:not(:last-child)::after {
+    content: "→";
+    margin-left: 0.6rem;
+    opacity: 0.7;
 }
 
 .story-note {
