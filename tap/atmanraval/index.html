@@ -288,6 +288,57 @@
             gap: 0.8rem;
         }
 
+        .tap-save-note {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1rem 1.1rem;
+            border-radius: 22px;
+            background: rgba(16, 24, 41, 0.92);
+            color: #fff;
+            border: 1px solid rgba(16, 24, 41, 0.12);
+            box-shadow: 0 16px 34px rgba(11, 18, 32, 0.12);
+        }
+
+        .tap-save-copy {
+            display: grid;
+            gap: 0.2rem;
+        }
+
+        .tap-save-title {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            line-height: 1;
+            letter-spacing: -0.03em;
+        }
+
+        .tap-save-text {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.92rem;
+        }
+
+        .tap-save-button {
+            flex-shrink: 0;
+            min-height: 52px;
+            padding: 0.85rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.24s ease, box-shadow 0.24s ease, background 0.24s ease;
+        }
+
+        .tap-save-button:hover,
+        .tap-save-button:focus-visible {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+            background: rgba(255, 255, 255, 0.16);
+        }
+
         .tap-action {
             display: flex;
             align-items: center;
@@ -415,6 +466,49 @@
             overflow-wrap: anywhere;
         }
 
+        .tap-modal-lead {
+            margin-top: 0.9rem;
+            color: var(--muted);
+            font-size: 0.96rem;
+        }
+
+        .tap-modal-steps {
+            margin: 1rem auto 0;
+            max-width: 320px;
+            display: grid;
+            gap: 0.7rem;
+            text-align: left;
+        }
+
+        .tap-modal-step {
+            padding: 0.85rem 0.95rem;
+            border-radius: 16px;
+            background: rgba(16, 24, 41, 0.04);
+            color: var(--ink);
+            font-size: 0.93rem;
+            line-height: 1.45;
+        }
+
+        .tap-modal-actions {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .tap-modal-button {
+            min-height: 46px;
+            padding: 0.8rem 1rem;
+            border-radius: 14px;
+            border: 1px solid rgba(11, 18, 32, 0.08);
+            background: rgba(16, 24, 41, 0.05);
+            color: var(--ink);
+            font: inherit;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
         @media (max-width: 700px) {
             .tap-card {
                 padding: 22px;
@@ -439,13 +533,15 @@
 
             .tap-primary,
             .tap-secondary,
-            .tap-action {
+            .tap-action,
+            .tap-save-note {
                 align-items: flex-start;
                 flex-direction: column;
             }
 
             .tap-button-badge,
-            .tap-action-tag {
+            .tap-action-tag,
+            .tap-save-button {
                 align-self: flex-start;
             }
 
@@ -554,6 +650,14 @@
                         </a>
                     </div>
 
+                    <div class="tap-save-note">
+                        <div class="tap-save-copy">
+                            <p class="tap-save-title">Save me to connect later.</p>
+                            <p class="tap-save-text">Bookmark this card so it stays easy to find after the meeting.</p>
+                        </div>
+                        <button class="tap-save-button" type="button" id="bookmarkCardButton">Save Card</button>
+                    </div>
+
                 </section>
 
             </div>
@@ -575,34 +679,184 @@
         </div>
     </div>
 
+    <div class="tap-modal" id="bookmarkModal" aria-hidden="true">
+        <div class="tap-modal-card" role="dialog" aria-modal="true" aria-labelledby="bookmarkModalTitle">
+            <button class="tap-modal-close" type="button" id="bookmarkModalClose" aria-label="Close bookmark help">X</button>
+            <h2 class="tap-modal-name" id="bookmarkModalTitle">Save me to connect later.</h2>
+            <p class="tap-modal-company">Bookmark This Card</p>
+            <p class="tap-modal-lead" id="bookmarkModalLead"></p>
+            <div class="tap-modal-steps" id="bookmarkSteps"></div>
+            <div class="tap-modal-actions">
+                <button class="tap-modal-button" type="button" id="copyCardLinkButton">Copy Link</button>
+            </div>
+            <div style="margin-top: 1rem;">
+                <span class="tap-modal-url">https://proviq.co/tap/atmanraval/</span>
+            </div>
+        </div>
+    </div>
+
     <script>
         (function () {
+            var cardUrl = "https://proviq.co/tap/atmanraval/";
             var shareButton = document.getElementById("shareCardButton");
+            var bookmarkButton = document.getElementById("bookmarkCardButton");
             var shareModal = document.getElementById("shareModal");
             var shareModalClose = document.getElementById("shareModalClose");
+            var bookmarkModal = document.getElementById("bookmarkModal");
+            var bookmarkModalClose = document.getElementById("bookmarkModalClose");
+            var bookmarkModalLead = document.getElementById("bookmarkModalLead");
+            var bookmarkSteps = document.getElementById("bookmarkSteps");
+            var copyCardLinkButton = document.getElementById("copyCardLinkButton");
+
+            function setBodyLock(locked) {
+                document.body.style.overflow = locked ? "hidden" : "";
+            }
 
             function openModal() {
                 shareModal.classList.add("is-open");
                 shareModal.setAttribute("aria-hidden", "false");
-                document.body.style.overflow = "hidden";
+                setBodyLock(true);
             }
 
             function closeModal() {
                 shareModal.classList.remove("is-open");
                 shareModal.setAttribute("aria-hidden", "true");
-                document.body.style.overflow = "";
+                setBodyLock(false);
+            }
+
+            function getBookmarkInstructions() {
+                var ua = navigator.userAgent || "";
+                var isIPhone = /iPhone|iPad|iPod/i.test(ua);
+                var isAndroid = /Android/i.test(ua);
+
+                if (isIPhone) {
+                    return {
+                        lead: "Safari does not let websites add bookmarks automatically.",
+                        steps: [
+                            "Tap the Share icon in Safari.",
+                            "Choose Add Bookmark or Add to Home Screen.",
+                            "Save this card so you can open it later."
+                        ]
+                    };
+                }
+
+                if (isAndroid) {
+                    return {
+                        lead: "Android browsers usually require a manual bookmark step.",
+                        steps: [
+                            "Tap the browser menu.",
+                            "Choose Star, Bookmark, or Add to Home screen.",
+                            "Save this card so you can reopen it later."
+                        ]
+                    };
+                }
+
+                return {
+                    lead: "Most browsers require you to confirm bookmarks yourself.",
+                    steps: [
+                        "Open the browser menu or bookmark icon.",
+                        "Choose Bookmark or Add to favorites.",
+                        "Save this card to reopen it later."
+                    ]
+                };
+            }
+
+            function renderBookmarkInstructions() {
+                var instructions = getBookmarkInstructions();
+                bookmarkModalLead.textContent = instructions.lead;
+                bookmarkSteps.innerHTML = instructions.steps.map(function (step) {
+                    return '<div class="tap-modal-step">' + step + "</div>";
+                }).join("");
+            }
+
+            function openBookmarkModal() {
+                renderBookmarkInstructions();
+                bookmarkModal.classList.add("is-open");
+                bookmarkModal.setAttribute("aria-hidden", "false");
+                setBodyLock(true);
+            }
+
+            function closeBookmarkModal() {
+                bookmarkModal.classList.remove("is-open");
+                bookmarkModal.setAttribute("aria-hidden", "true");
+                setBodyLock(false);
+            }
+
+            function legacyCopyLink() {
+                var textarea = document.createElement("textarea");
+                textarea.value = cardUrl;
+                textarea.setAttribute("readonly", "");
+                textarea.style.position = "absolute";
+                textarea.style.left = "-9999px";
+                document.body.appendChild(textarea);
+                textarea.select();
+                textarea.setSelectionRange(0, textarea.value.length);
+
+                try {
+                    document.execCommand("copy");
+                } catch (error) {
+                    return;
+                } finally {
+                    document.body.removeChild(textarea);
+                }
+            }
+
+            function copyLink() {
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(cardUrl).catch(function () {
+                        legacyCopyLink();
+                    });
+                    return;
+                }
+
+                legacyCopyLink();
+            }
+
+            function tryNativeBookmark() {
+                try {
+                    if (window.sidebar && window.sidebar.addPanel) {
+                        window.sidebar.addPanel(document.title, cardUrl, "");
+                        return true;
+                    }
+                } catch (error) {}
+
+                try {
+                    if (window.external && typeof window.external.AddFavorite === "function") {
+                        window.external.AddFavorite(cardUrl, document.title);
+                        return true;
+                    }
+                } catch (error) {}
+
+                return false;
+            }
+
+            function handleBookmark() {
+                if (!tryNativeBookmark()) {
+                    openBookmarkModal();
+                }
             }
 
             shareButton.addEventListener("click", openModal);
+            bookmarkButton.addEventListener("click", handleBookmark);
             shareModalClose.addEventListener("click", closeModal);
             shareModal.addEventListener("click", function (event) {
                 if (event.target === shareModal) {
                     closeModal();
                 }
             });
+            bookmarkModalClose.addEventListener("click", closeBookmarkModal);
+            bookmarkModal.addEventListener("click", function (event) {
+                if (event.target === bookmarkModal) {
+                    closeBookmarkModal();
+                }
+            });
+            copyCardLinkButton.addEventListener("click", copyLink);
             document.addEventListener("keydown", function (event) {
                 if (event.key === "Escape" && shareModal.classList.contains("is-open")) {
                     closeModal();
+                }
+                if (event.key === "Escape" && bookmarkModal.classList.contains("is-open")) {
+                    closeBookmarkModal();
                 }
             });
         }());
