@@ -41,6 +41,14 @@ if (page) {
     }
 }
 
+const yearNodes = document.querySelectorAll('[data-current-year]');
+if (yearNodes.length) {
+    const currentYear = new Date().getFullYear();
+    yearNodes.forEach(node => {
+        node.textContent = currentYear;
+    });
+}
+
 // Smooth scroll for in-page anchors
 const anchorLinks = document.querySelectorAll('a[href^="#"]');
 anchorLinks.forEach(anchor => {
