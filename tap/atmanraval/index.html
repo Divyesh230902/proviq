@@ -120,6 +120,37 @@
             border: 1px solid rgba(11, 18, 32, 0.08);
         }
 
+        .tap-hero-head {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 156px;
+            gap: 1.25rem;
+            align-items: end;
+        }
+
+        .tap-hero-copy {
+            display: grid;
+            gap: 0.85rem;
+            align-self: center;
+        }
+
+        .tap-avatar {
+            width: 156px;
+            height: 156px;
+            justify-self: end;
+            border-radius: 34px;
+            overflow: hidden;
+            border: 3px solid rgba(255, 255, 255, 0.92);
+            box-shadow: 0 20px 36px rgba(11, 18, 32, 0.14);
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .tap-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+
         .tap-kicker {
             font-size: 0.76rem;
             letter-spacing: 0.24em;
@@ -417,6 +448,16 @@
             .tap-action-tag {
                 align-self: flex-start;
             }
+
+            .tap-hero-head {
+                grid-template-columns: 1fr;
+            }
+
+            .tap-avatar {
+                width: 132px;
+                height: 132px;
+                justify-self: start;
+            }
         }
     </style>
 </head>
@@ -430,9 +471,16 @@
                     </div>
 
                     <div class="tap-hero">
-                        <p class="tap-kicker">Digital Business Card</p>
-                        <h1 class="tap-name" id="atman-raval">Atman Raval</h1>
-                        <p class="tap-role">Proviq</p>
+                        <div class="tap-hero-head">
+                            <div class="tap-hero-copy">
+                                <p class="tap-kicker">Digital Business Card</p>
+                                <h1 class="tap-name" id="atman-raval">Atman Raval</h1>
+                                <p class="tap-role">Proviq</p>
+                            </div>
+                            <div class="tap-avatar">
+                                <img src="/tap/atmanraval/asset/1766819092474.jpeg" alt="Atman Raval">
+                            </div>
+                        </div>
 
                         <div class="tap-meta-grid">
                             <div class="tap-meta">
