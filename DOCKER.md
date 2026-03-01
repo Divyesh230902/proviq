@@ -83,7 +83,7 @@ docker run -d -p 3000:80 --name proviq-website proviq-website
 
 1. Change `server_name` to your domain:
 ```nginx
-server_name proviq.com www.proviq.com;
+server_name proviq.co www.proviq.co;
 ```
 
 2. Add SSL/TLS configuration (recommended):
@@ -103,7 +103,7 @@ You can pass environment variables to customize nginx:
 ```yaml
 # docker-compose.yml
 environment:
-  - NGINX_HOST=proviq.com
+  - NGINX_HOST=proviq.co
   - NGINX_PORT=80
 ```
 
@@ -161,4 +161,3 @@ docker system prune -a
 ## Image Size
 
 The nginx:alpine image is ~23MB, making it very lightweight for production use.
-

@@ -42,7 +42,7 @@ git push -u origin main
 ## 🔗 Add Custom Domain (Optional)
 
 1. Go to Vercel Dashboard → Your Project → Settings → Domains
-2. Add your domain (e.g., `proviq.com`)
+2. Add your domain (e.g., `proviq.co`)
 3. Update DNS records as instructed
 4. Wait for SSL (automatic, ~5 minutes)
 
@@ -70,4 +70,3 @@ git push
 ```
 
 Vercel automatically redeploys! 🚀
-

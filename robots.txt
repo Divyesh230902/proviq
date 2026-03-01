@@ -2,9 +2,8 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://proviq.com/sitemap.xml
+Sitemap: https://proviq.co/sitemap.xml
 
 # Disallow admin or private areas if any
 # Disallow: /admin/
 # Disallow: /private/
-

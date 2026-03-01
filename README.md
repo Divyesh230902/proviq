@@ -207,7 +207,7 @@ Vercel offers free hosting with automatic SSL, CDN, and custom domains. Perfect 
 #### Custom Domain Setup
 1. Go to your project settings on Vercel
 2. Click "Domains"
-3. Add your domain (e.g., `proviq.com`)
+3. Add your domain (e.g., `proviq.co`)
 4. Follow DNS configuration instructions
 5. SSL is automatically configured
 

@@ -58,7 +58,7 @@ The `vercel.json` file is already configured with:
 
 1. Go to your project on Vercel dashboard
 2. Navigate to **Settings** → **Domains**
-3. Add your domain (e.g., `proviq.com`)
+3. Add your domain (e.g., `proviq.co`)
 4. Follow DNS instructions:
    - Add a CNAME record pointing to `cname.vercel-dns.com`
    - Or add A records (provided by Vercel)
@@ -136,4 +136,3 @@ Your site will be fast! ⚡
 
 - Vercel Docs: [vercel.com/docs](https://vercel.com/docs)
 - Community: [github.com/vercel/vercel/discussions](https://github.com/vercel/vercel/discussions)
-
